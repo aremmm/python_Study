@@ -116,7 +116,7 @@ with open(os.path.join(path, '대전.csv'), 'r', encoding='euc-kr') as f :
 
     for line in lines[1:] : #동 정보
                     #ㄴ> [1:] 라고 쓴 이유는 1 부터 끝까지 불러오기 위해.
-                    #ㄴ> 0은 위에 golist에서 썼기 때문. 0은 동 정보가 아니기 때문에 1부터 시작.
+                    #ㄴ> 0은 위에 gulist에서 썼기 때문. 0은 동 정보가 아니기 때문에 1부터 시작.
         dongList = line.strip('\n').split(',')
         for gu, dong in zip(guList, dongList) :
             dongPath = os.path.join(path, region, gu, dong)
